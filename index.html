@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>       
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color="black"></a-sky>
+            <a-camera position="0 0 36"></a-camera>
+            <a-entity position="0 0 0" spe-particles="
+                color: orange ,green, red, black;
+                distribution: sphere;
+                randomize-velocity: true;
+                radius: 5;
+                particle-count: 900;
+                velocity: 5;
+                velocity-spread: 22;
+                drag: 1;
+                max-age: 5;
+                duration: -3;
+                blending: additive;
+                active-multiplier: 1000;
+                size: 1, 1, 1, 0;"></a-entity>
+            
+            <a-entity position="20 0 0" spe-particles="
+                color: cyan ,grey, pink, black;
+                distribution: sphere;
+                randomize-velocity: true;
+                radius: 5;
+                particle-count: 900;
+                velocity: 5;
+                velocity-spread: 22;
+                drag: 1;
+                max-age: 5;
+                duration: -3;
+                blending: additive;
+                active-multiplier: 1000;
+                size: 1, 1, 1, 0;"></a-entity>
+
+            <a-entity position="-20 0 0" spe-particles="
+                color: purple ,turquoise, blue, black;
+                distribution: sphere;
+                randomize-velocity: true;
+                radius: 5;
+                particle-count: 900;
+                velocity: 5;
+                velocity-spread: 22;
+                drag: 1;
+                max-age: 5;
+                duration: -3;
+                blending: additive;
+                active-multiplier: 1000;
+                size: 1, 1, 1, 0;"></a-entity>
+            <a-entity position="0 0 0" text="value: CELEBRATING A DECADE OF CLASSES OF A AND VR; color: white"></a-entity>
+
+        </a-scene>
+    </body>
+</html>
